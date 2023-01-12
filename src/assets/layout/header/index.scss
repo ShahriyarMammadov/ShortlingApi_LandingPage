@@ -1,0 +1,114 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.5% 0%;
+    width: 100%;
+    position: relative;
+
+    .active {
+        color: #34313D;
+        font-weight: 800;
+    }
+
+    .site-card-border-less-wrapper {
+        position: absolute;
+        top: 100%;
+        right: 15%;
+
+        .ant-card-head-title {
+            padding: 30px 0;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .ant-card-body {
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 18px;
+            font-weight: 700;
+            padding-top: 0;
+        }
+
+        button {
+            background-color: #2BD0D0;
+            border-radius: 28px;
+            height: 40px;
+            width: 105px;
+            border: none;
+            color: white;
+        }
+    }
+
+    a {
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 23px;
+        text-decoration: none;
+        color: #9E9AA8;
+
+        @media only screen and (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 45.43px;
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 29px;
+        }
+    }
+
+    .headerRight {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 37px;
+
+        button {
+            background-color: #2BD0D0;
+            border-radius: 28px;
+            height: 40px;
+            width: 105px;
+            border: none;
+
+            @media only screen and (max-width: 992px) {
+                display: none;
+            }
+
+            a {
+                color: white;
+            }
+
+            &:hover {
+                background-color: #9AE3E3;
+                cursor: pointer;
+            }
+        }
+
+
+        .menuIcon {
+            font-size: 25px;
+            display: none;
+
+            i {
+                cursor: pointer;
+                color: #9E9AA8;
+            }
+
+            @media only screen and (max-width: 992px) {
+                display: flex;
+            }
+        }
+    }
+}
